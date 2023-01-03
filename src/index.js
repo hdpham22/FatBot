@@ -29,10 +29,6 @@ for (const folder of functionFolders) {
         require(`./functions/${folder}/${file}`)(client);
 }
 
-/*client.on('ready', () => {
-    console.log('FatBot is online')
-})*/
-
 client.handleEvents();
 client.handleCommands();
 

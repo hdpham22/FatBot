@@ -6,12 +6,14 @@ module.exports = {
         String.prototype.cleanup = function() {
             return this.toLowerCase().replace(/[^a-zA-Z0-9]+/g, '');
          }
+         
         const msg = message.content.cleanup();
         const fatSynonyms = ['fat', 'obese', 'plump', 'portly', 'corpulent', 'overweight', 'chubby', 'rotund', 
                             'beefy', 'pudgy', 'pleasingly plump', 'fatty', 'jiggly', 'fluffy', 'curvy', 'thick', 'wellfed', 
                             'chunky', 'hefty', 'heavy', 'bulky', 'corpulent', 'full', 'ample', 'paunchy', 'rounded', 'stout', 
                             'gravid', 'rotund', 'wellproportioned', 'plump', 'pleasingly plump', 'wellrounded', 'fleshy', 
                             'wellpadded', 'obesity', 'bmi', 'gargantuan', 'elephantine'];
+
         if (!message.author.bot) {
             fatSynonyms.some(element => {
                 if (msg.includes(element) && message.member.manageable) {
