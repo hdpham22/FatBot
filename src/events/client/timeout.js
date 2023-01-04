@@ -12,7 +12,7 @@ module.exports = {
                             'beefy', 'pudgy', 'pleasingly plump', 'fatty', 'jiggly', 'fluffy', 'curvy', 'thick', 'wellfed', 
                             'chunky', 'hefty', 'heavy', 'bulky', 'corpulent', 'full', 'ample', 'paunchy', 'rounded', 'stout', 
                             'gravid', 'rotund', 'wellproportioned', 'plump', 'pleasingly plump', 'wellrounded', 'fleshy', 
-                            'wellpadded', 'obesity', 'bmi', 'gargantuan', 'elephantine'];
+                            'wellpadded', 'obesity', 'bmi', 'gargantuan', 'elephantine', 'enlarged', 'snorlax'];
 
         if (!message.author.bot) {
             fatSynonyms.some(element => {
