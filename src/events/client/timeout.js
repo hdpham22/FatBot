@@ -18,7 +18,7 @@ module.exports = {
             fatSynonyms.some(element => {
                 if (msg.includes(element) && message.member.manageable) {
                     message.member.timeout(60 * 1000).catch(console.error);
-                    message.reply('Got yo stupid idiot ass');
+                    message.reply('You\'re on timeout');
                     
                 } else if (msg.includes(element) && !message.member.manageable) {
                     message.reply('You\'re lucky I don\'t have the permissions to put you on timeout.');
